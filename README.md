@@ -1,17 +1,18 @@
-# 🔗 Simple Server Links
+# Simple Server Links
 
 Easily configure the Server Links button introduced in 1.21 for your server
+
+Make sure to comment out `bug-report-link` in your `server.properties`
 
 ## Demo Video
 [![](https://github.com/malloryhayr/simple-server-links/assets/22878174/523fac02-636f-4a22-aadc-050a8cff3c6d)](https://files.farlands.cafe/media_attachments/files/112/527/712/368/000/196/original/baf7f42f11cd32e3.mp4)
 
 ## Example config
-```toml
-[links]
-    "known_server_link.website" = "https://example.com"
-    "custom.server_link.wiki" = "https://minecraft.wiki"
+```ini
+known_server_link.website=https://mc.example.com
+custom.server_link.wiki=https://wiki.mc.example.com
+Rules=https://mc.example.com/rules
 ```
-
 
 ## Generic server link types
 | Translation Key                        | Display Name         |
@@ -27,4 +28,4 @@ Easily configure the Server Links button introduced in 1.21 for your server
 | known_server_link.support              | Support              |
 | known_server_link.website              | Website              |
 
-*Has special functionality
+*Also shows if the player encounters a crash.
